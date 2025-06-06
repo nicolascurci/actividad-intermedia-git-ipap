@@ -1,0 +1,68 @@
+Nicolas Curci
+
+Git- Módulo 1 - Foro Respuestas
+
+¿Qué tan importante es aprender este tipo de herramientas?¿Por qué?
+
+Es clave porque nos ayudan a organizar mejor el trabajo, especialmente cuando hay varias personas colaborando.
+Permiten guardar versiones del proyecto y volver atrás si cometemos errores.
+Por otro lado evitamos el viejo método de replicar código en carpetas como "proyecto", "proyecto1", "proyecto 1 bueno", "proyecto 1 bueno bueno", etc
+
+¿Qué tipos de archivo deberían subirse a un servidor Git y cuáles no?
+
+Lo ideal es subir solo los archivos del código y las configuraciones necesarias para que el proyecto funcione.
+No conviene subir archivos generados automáticamente, archivos con contraseñas o cosas personales porque no aportan al proyecto y son un riesgo de seguridad.
+Tampoco subir carpetas de dependencias como node_modules o vendor, ni archivos temporales.
+En definitiva, no subir nada que comprometa la seguridad ni archivos o carpetas que puedan volver a ser generadas nuevamente para no ocupar espacio de más. 
+Lo mejor es agregar estos archivos y/o carpetas al .gitignore para que Git no los tenga en cuenta.
+
+¿Qué ventajas y desventajas nos brinda el Software Libre?
+
+Entre las ventajas:
+Es gratuito o de costo accesible.
+Es de código abierto,  Podes ver cómo está hecho, modificarlo y adaptarlo a lo que uno necesita.
+Suele tener comunidades bastante activas que ayudan mucho tanto en el aprendizaje como en el desarrollo.
+
+Como desventaja:
+A veces puede faltar soporte técnico o ser complicado resolver cuestiones particulares ya que se dependen de la actividad y los aportes de la comunidad y no tiene un soporte técnico oficial.
+
+-----------------------------------------------------------------------------------------------------------------------
+
+Git- Módulo 2 - Foro Respuestas
+
+¿Qué tan importante es escribir comentarios en los commits? ¿Por qué?
+
+Es fundamental porque ayuda a entender qué cambios se realizaron y por qué.
+Facilita la revisión del historial y permite que cualquier integrante del equipo sepa de las modificaciones en cada versión.
+
+¿Por qué crees que es importante tener copias en repositorios remotos?
+
+Para proteger el código fallos o daños en el equipo local.
+Además, permite trabajar en equipo de forma organizada y sincronizada, y tener acceso a un historial completo del desarrollo desde cualquier ubicación.
+
+¿Cuál crees que es la ventaja de tener todas las versiones en una copia local?
+
+Un historial completo del proyecto en una copia local permite consultar y comparar versiones anteriores sin depender de una conexión a internet o del acceso al repositorio remoto, lo que agiliza el trabajo y mejora la autonomía del desarrollador.
+
+-----------------------------------------------------------------------------------------------------------------------
+
+Git- Módulo 3 - Foro Respuestas
+
+¿Qué tan importante es trabajar con ramas? ¿Por qué?
+
+Trabajar con ramas es muy importante porque permite desarrollar nuevas funcionalidades, corregir errores o hacer pruebas sin afectar el código principal. Esto ayuda a mantener un flujo de trabajo ordenado, evita conflictos y facilita la integración de cambios cuando estén listos y probados.
+
+¿Qué tipos de ramas se usan habitualmente? ¿Por qué?
+
+Los tipos de ramas más comunes son:
+
+master o producción: contiene la versión estable del proyecto.
+develop o desarrollo: donde se integran los desarrollos antes de pasar a producción.
+feature: para el desarrollo de nuevas funcionalidades.
+hotfix: para resolver errores urgentes en producción.
+release: para preparar una nueva versión estable.
+Estas ramas permiten organizar el trabajo y mantener un control claro sobre qué cambios se están haciendo y en qué etapa se encuentran.
+
+¿Por qué creés que es importante usar tags?
+
+Los tags son útiles porque permiten marcar versiones específicas del proyecto, como entregas oficiales o lanzamientos. Esto facilita volver a una versión puntual si es necesario y ayuda a identificar de forma clara los hitos importantes en el desarrollo.
