@@ -1,0 +1,100 @@
+Curso GIT IPAP 
+ACTIVIDAD INTERMEDIA
+
+Nicolás Curci
+
+DTI, Ministerio de Ambiente
+
+Repositorio de la actividad:
+
+	 https://github.com/nicolascurci/actividad-intermedia-git-ipap.git
+
+Entorno de desarrollo WSL - Ubuntu + VS Code
+
+1 - Crear la carpeta actividad-intermedia-git-ipap
+
+	mkdir actividad-intermedia-git-ipap
+
+2 -Entrar a la carpeta y crear la estructura del proyecto y un README.md con el titulo del proyecto
+
+	cd actividad-intermedia-git-ipap	
+	mkdir img
+	mkdir docs
+	echo "# Actividad Intermedia Curso GIT IPAP" > README.md
+
+3 - Iniciar Git y ver el estado
+
+	git init
+	git status
+
+	Captura_1.png
+
+4 - Hacer el primer commit
+
+	git add .
+	git commit -m "Primer commit actividad intermedia GIT"
+
+5 - Crear repositorio en GitHub.com
+
+	Captura_2.png
+
+6 - Agregar repositorio remoto al repositorio local y hacer el primer push
+
+	git remote add origin https://github.com/nicolascurci/actividad-intermedia-git-ipap.git
+	git branch -M main
+	git push -u origin main
+	
+7 - Refrescar la pagina https://github.com/nicolascurci/actividad-intermedia-git-ipap y ver resultados
+
+	Captura_3.png
+
+8 - Copiar los archivos de la carpeta ./actividad_intermedia_archivos a la carpeta actividad-intermedia-git-ipap/docs
+
+	cp -r ~/actividad_intermedia_archivos/* ./docs/
+
+9 - Si hago git add . y luego git status veo los cambios listos para hacer commit
+
+	git add .
+	git status
+
+	Captura_4.png
+
+9 - Hacer add commit y push para actualizar el repositorio remoto	
+
+	git commit -m "Copio archivos de actividades en la carpeta docs"
+	git push origin main
+	
+	puedo ver los cambios en el repositorio remoto
+
+	Captura_5.png
+
+10 - Abro el VS Code para editar el README.md 
+
+	code .
+
+11 - Edito y hago commit
+
+	git add .
+	git commit -m "Edición de README.md"
+
+11 - Copio las capturas a la carpeta img y este archivo a la raíz del proyecto y luego hago el  ultimo commit y push 
+
+	git add .
+
+	git status
+
+		On branch main
+			Your branch is ahead of 'origin/main' by 1 commit.
+  			(use "git push" to publish your local commits)
+
+		Changes to be committed:
+  			(use "git restore --staged <file>..." to unstage)
+        		new file:   img/Captura_1.png
+        		new file:   img/Captura_2.png
+        		new file:   img/Captura_3.png
+        		new file:   img/Captura_4.png
+        		new file:   img/Captura_5.png
+
+	git commit -m "Subo capturas de pantalla y txt con el paso a paso"
+
+	git push origin main
